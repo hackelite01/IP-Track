@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# Tool Name :- IP-Track
+# Author :- Mayank Rajput (HackElite)
+# Date :- 6/6/2021
+
+case "$1" in
+  -m)
+    php modules/.trackm.php
+  ;;
+  -t)
+    case "$#" in
+    2)
+      php modules/.trackip.php $2
+    ;;
+    *)
+      echo "error : invalid arguments !!"
+      echo "use: ip-track -t <target_ip>"
+    ;;
+    esac
+  ;;
+  -u)
+    php modules/.update.php
+    exit
+  ;;
+  update)
+    php modules/.update.php
+    exit
+  ;;
+  start)
+    php .IP-Track.php
+    exit
+  ;;
+  -rm)
+    php modules/.uninstall.php
+    exit
+  ;;
+  *)
+    echo "Usage: ip-track [command]... [arguments]..."
+    echo " Commands:"
+    echo " -t <target_ip>      to trace target ip."
+    echo " -m                  to trace your own ip."
+    echo " -h                  to show help."
+    echo " -u                  to update ip-track."
+    echo " help                to show help."
+    echo " update              to update ip-track."
+    echo " start               to start ip-track menu."
+esac

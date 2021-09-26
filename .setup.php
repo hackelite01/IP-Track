@@ -90,9 +90,9 @@ EOL;
 \033[01;37m ----------------------------------------------
 |         \033[01;36mcommand\033[01;37m       |        \033[01;36mUse\033[01;37m           |
  ----------------------------------------------
-| \033[01;32mtrack -m\033[01;37m              | \033[01;33mTrack your IP\033[01;37m        |
-| \033[01;32mtrack -t <traget-ip>\033[01;37m  | \033[01;33mTrack IP\033[01;37m             |
-| \033[01;32mtrack --help\033[01;37m         | \033[01;33mFor more information\033[01;37m |
+| \033[01;32mip-track -m\033[01;37m              | \033[01;33mTrack your IP\033[01;37m        |
+| \033[01;32mip-track -t <traget-ip>\033[01;37m  | \033[01;33mTrack IP\033[01;37m             |
+| \033[01;32mip-track --help\033[01;37m         | \033[01;33mFor more information\033[01;37m |
  ----------------------------------------------
 
 \033[01;31mNote :- ip-api will automatically ban any IP addresses doing over 150 requests per minute.\033[00m
